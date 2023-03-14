@@ -5,7 +5,7 @@ import { Movie } from '../typings'
 import { FaPlay } from 'react-icons/fa'
 import { modalState, movieState } from '../atoms/modalAtom'
 import { useRecoilState } from 'recoil'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -29,6 +29,7 @@ function Banner({ netflixOriginals }: Props) {
           layout="fill"
           src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
           objectFit="cover"
+          alt="Image Description"
         />
       </div>
 

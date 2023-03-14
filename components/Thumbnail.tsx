@@ -1,5 +1,5 @@
 import { DocumentData } from 'firebase/firestore'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { useRecoilState } from 'recoil'
 import { modalState, movieState } from '../atoms/modalAtom'
 import { Movie } from '../typings'
@@ -26,6 +26,7 @@ function Thumbnail({ movie }: Props) {
         }`}
         className="rounded-sm object-cover md:rounded"
         layout="fill"
+        alt='background picture'
       />
     </div>
   )
