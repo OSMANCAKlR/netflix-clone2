@@ -46,7 +46,6 @@ function Modal() {
     fetchMovie();
   }, [movie]);
 
-  console.log(trailer);
 
   const handleClose = () => {
     setShowModal(false);
